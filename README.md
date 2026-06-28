@@ -1,22 +1,20 @@
-# AI Social Video Generator
+# Social Video Generator
 
-Enterprise-grade pipeline for generating short-form social media videos (TikTok/Reels/Shorts). Integrates OpenAI for scriptwriting and image generation, and MoviePy for compositing.
+Generates short-form social videos. Uses OpenAI to write scripts and create images, and MoviePy to put them together.
 
 ## Architecture
-- **Language**: Python 3.11+
-- **LLM / Generation**: OpenAI GPT-4o & DALL-E 3
-- **Video Processing**: MoviePy & ImageMagick
+- Language: Python 3.11+
+- LLM / Generation: OpenAI GPT-4o & DALL-E 3
+- Video Processing: MoviePy & ImageMagick
 
-## Infrastructure
-This service is fully containerized and includes a CI/CD pipeline.
+## Setup
 
-### Running Locally with Docker
+Run locally with Docker:
 ```bash
 docker-compose up --build
 ```
 
-### Running Tests
-We use Pytest for continuous integration.
+Run tests:
 ```bash
 pytest tests/
 ```
