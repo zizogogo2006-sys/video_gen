@@ -1,0 +1,6 @@
+version: '3.8'
+services:
+  video-gen:
+    build: .
+    environment:
+      - OPENAI_API_KEY=${OPENAI_API_KEY}
